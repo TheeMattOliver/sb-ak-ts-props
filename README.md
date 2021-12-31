@@ -1,8 +1,8 @@
-# What are we trying to do?
+# Minimal repro to try to understand Typescript, Storybook, and the right import/export strategy
 
 ## tl;dr
 
-Import a component from external lib, wrap it, and pass its props and types along to Storybook, in a setup with React 17, Typescript 4, Storybook 6.4.
+Our goal is to import a component from external lib, and pass its props and types along to Storybook, in a setup with React 17, Typescript 4, Storybook 6.4. We might also want to eventually wrap it in a `styled-components` component that we can compose with, but for now, I'm just trying to understand the correct way to set prop types/default props, and get it into Storybook so it renders properly and we get controls for each prop.
 
 Here's what this should look like, if it was working:
 
@@ -14,7 +14,7 @@ Here's what this currently looks like (default props from the imported component
 
 ## More:
 
-What is a good Typescript strategy for importing a component with all of its types and props, and then passing those props and types into Storybook, such that:
+What is a good Typescript strategy for importing that external component, with its internal types and props, and then passing those props and types into Storybook, such that:
 
 1. The internal default props are passed to the rendered Storybook component,
 2. And Storybook "just works", without needing to enumerate `argTypes`?
@@ -47,7 +47,13 @@ export default {
 } as Meta;
 ```
 
+I've seen people use the `parameters` in the Story, but I think this is a Typescript thing I'm misunderstanding.
+
 ## Files
+
+`/src/components/NaiveConfirmationDialog` is basically what it sounds like. It imports the component, but those implementations rely on a bunch of JSX. It would be great if we didn't have to do that, and could just rely on passing props into the component.
+
+`/src/components/WrappedModalDialog` displays the approach I'm trying to understand how to achieve. We import all the components from the external lib in `WrappedModalDialog`, and would ideally be able to export it as a consumable package from `index.ts`; we'd also ideally see the component render properly and all of the various props from the components that the `modal-dialog` component is composed of as controls in Storybook.
 
 ## Install and run:
 

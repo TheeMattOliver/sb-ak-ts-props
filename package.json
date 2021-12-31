@@ -1,5 +1,5 @@
 {
-  "name": "blasted-barrel-imports",
+  "name": "storybook-ts-props-tester",
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
