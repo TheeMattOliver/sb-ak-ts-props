@@ -1,6 +1,18 @@
 # What are we trying to do?
 
+## tl;dr
+
 Import a component from external lib, wrap it, and pass its props and types along to Storybook, in a setup with React 17, Typescript 4, Storybook 6.4.
+
+Here's what this should look like, if it was working:
+
+![Minimal repro](https://media.giphy.com/media/G6wwwZFYKjwnKvncNu/giphy.gif)
+
+Here's what this currently looks like (default props from the imported component not being passed along and hence, the modal renders like this, and there's no inferred args to create controls in Storybook):
+
+![Minimal repro](https://media.giphy.com/media/vAmVAKVZJXvrXx3sxV/giphy.gif)
+
+## More:
 
 What is a good Typescript strategy for importing a component with all of its types and props, and then passing those props and types into Storybook, such that:
 
@@ -35,15 +47,7 @@ export default {
 } as Meta;
 ```
 
-Here's what this should look like, if was working:
-
-![Minimal repro](https://media.giphy.com/media/G6wwwZFYKjwnKvncNu/giphy.gif)
-
-Here's what this currently looks like (default props from the imported component not being passed along and hence, the modal renders like this, and there's no inferred args to create controls in Storybook):
-
-![Minimal repro](https://media.giphy.com/media/vAmVAKVZJXvrXx3sxV/giphy.gif)
-
-What do you think?
+## Files
 
 ## Install and run:
 
