@@ -50,13 +50,15 @@ export default {
 } as Meta;
 ```
 
-I've seen people use the `parameters` in the Story, but I think this is a Typescript thing I'm misunderstanding.
+I've seen people use `parameters` in their Story component, but I think this is a Typescript thing I'm misunderstanding.
 
 ## Files
 
 `/src/components/NaiveConfirmationDialog` is basically what it sounds like. It imports the component, but those implementations rely on a bunch of JSX. It would be great if we didn't have to do that, and could just rely on passing props into the component.
 
 `/src/components/WrappedModalDialog` displays the approach I'm trying to understand how to achieve. We import all the components from the external lib in `WrappedModalDialog`, and would ideally be able to export it as a consumable package from `index.ts`; we'd also ideally see the component render properly and all of the various props from the components that the `modal-dialog` component is composed of as controls in Storybook.
+
+This Storybook is live at [https://serene-babbage-995693.netlify.app/](https://serene-babbage-995693.netlify.app/).
 
 ## Install and run:
 
