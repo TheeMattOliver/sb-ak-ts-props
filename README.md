@@ -42,7 +42,8 @@ export default {
       );
     },
   ],
-  argTypes: {}, // <-- we want to be able to leave this object empty and let Storybook infer props and types for Controls from the imported components' props
+  argTypes: {}, // <-- we want to be able to leave this object empty and let Storybook infer
+  // props and types for Controls from the imported components' props
   },
 } as Meta;
 ```
