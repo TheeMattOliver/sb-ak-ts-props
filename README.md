@@ -1,8 +1,10 @@
 # Minimal repro to try to understand Typescript, Storybook, and the right import/export strategy
 
+This Storybook is live at [https://serene-babbage-995693.netlify.app/](https://serene-babbage-995693.netlify.app/).
+
 ## tl;dr
 
-Our goal is to import a component from external lib, and pass its props and types along to Storybook, in a setup with React 17, Typescript 4, Storybook 6.4. We might also want to eventually wrap it in a `styled-components` component that we can compose with, but for now, I'm just trying to understand the correct way to set prop types/default props, and get it into Storybook so it renders properly and we get controls for each prop.
+My goal is to import a component from external lib, and pass its props and types along to Storybook, in a setup with React 17, Typescript 4, Storybook 6.4. I might also want to eventually wrap it in a `styled-components` component that we can compose with, but for now, I'm just trying to understand the correct strategy to set properly type props and set default props on components with Typescript, and get it into Storybook so it renders properly and we get controls for each prop.
 
 Here's what this should look like, if it was working:
 
