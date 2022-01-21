@@ -60,6 +60,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "release": "yarn build && changeset publish",
     "build": "rollup -c"
   }
 }
