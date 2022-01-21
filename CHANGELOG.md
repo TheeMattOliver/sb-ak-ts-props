@@ -1,5 +1,11 @@
 # storybook-ts-props-tester
 
+## 2.1.0
+
+### Minor Changes
+
+- [#5](https://github.com/TheeMattOliver/sb-ak-ts-props/pull/5) [`30d81d4`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/30d81d4cf85d4501ccfec920a79433faf25951a7) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - rm hard-coded color values and import from pkg
+
 ## 2.0.2
 
 ### Patch Changes
