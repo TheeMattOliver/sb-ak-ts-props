@@ -4140,6 +4140,11 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.12.2, ajv@^6.12.4, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+ak-pr-demo-vars@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ak-pr-demo-vars/-/ak-pr-demo-vars-0.1.0.tgz#03f50294a65d25c7b8bf5ec56172eed366a3fcbb"
+  integrity sha512-7Qqolqmq8jxxk8QgZkHa2O1Wa0/OS8J+y5VqpD0+NmPNIlrINMxQTJug9CczmCyFrpxrU66mVG5vMH3KRVYqgg==
+
 alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
