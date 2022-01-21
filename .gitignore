@@ -9,3 +9,5 @@ lib
 
 # local
 .DS_Store
+
+storybook-static
