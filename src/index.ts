@@ -10,7 +10,7 @@ export {
 export type { ThemeProviderProps } from "./components/ThemeProvider";
 
 // components
-export { AtlasButton } from "./components/AtlasButton";
-export { AtlasLoadingButton } from "./components/AtlasButton";
+export { ExtendedButton } from "./components/ExtendedButton";
+export { ExtendedLoadingButton } from "./components/ExtendedButton";
 
 export { TestComponent } from "./components/TestComponent";

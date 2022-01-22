@@ -3,15 +3,15 @@ import { Meta } from "@storybook/react";
 import BaseStyles from "../components/BaseStyles";
 import { ThemeProvider } from "../components/ThemeProvider";
 
-import { AtlasButton } from "..";
+import { ExtendedButton } from "..";
 
 import { ComponentProps } from "../utils/types";
 
-type AtlasButtonProps = ComponentProps<typeof AtlasButton>;
+type ExtendedButtonProps = ComponentProps<typeof ExtendedButton>;
 
 export default {
-  title: "Components/AtlasButton",
-  component: AtlasButton,
+  title: "Components/ExtendedButton",
+  component: ExtendedButton,
   decorators: [
     (Story) => {
       // Since portal roots are registered globally, we need this line so that each storybook
@@ -41,6 +41,6 @@ export default {
   },
 } as Meta;
 
-export const atlasButton = (args: AtlasButtonProps) => {
-  return <AtlasButton {...args}>Hello world</AtlasButton>;
+export const extendedButton = (args: ExtendedButtonProps) => {
+  return <ExtendedButton {...args}>Hello world</ExtendedButton>;
 };

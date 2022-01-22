@@ -1,16 +1,16 @@
 import React from "react";
 import { Meta } from "@storybook/react";
 
-import { AtlasLoadingButton } from "..";
+import { ExtendedLoadingButton } from "..";
 
 import BaseStyles from "../components/BaseStyles";
 import { ComponentProps } from "../utils/types";
 
-type AtlasLoadingButtonProps = ComponentProps<typeof AtlasLoadingButton>;
+type ExtendedLoadingButtonProps = ComponentProps<typeof ExtendedLoadingButton>;
 
 export default {
-  title: "Components/AtlasButton",
-  component: AtlasLoadingButton,
+  title: "Components/ExtendedButton",
+  component: ExtendedLoadingButton,
   decorators: [
     (Story) => {
       // Since portal roots are registered globally, we need this line so that each storybook
@@ -21,8 +21,8 @@ export default {
   argTypes: {},
 } as Meta;
 
-export const atlasLoadingButton = (args: AtlasLoadingButtonProps) => {
-  return <AtlasLoadingButton {...args}>Hello world</AtlasLoadingButton>;
+export const ExtendedLoadingButton = (args: ExtendedLoadingButtonProps) => {
+  return <ExtendedLoadingButton {...args}>Hello world</ExtendedLoadingButton>;
 };
 
-atlasLoadingButton.args = { isLoading: true };
+ExtendedLoadingButton.args = { isLoading: true };
