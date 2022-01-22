@@ -1,5 +1,11 @@
 # storybook-ts-props-tester
 
+## 2.2.1
+
+### Patch Changes
+
+- [`ebd1f72`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/ebd1f72aef3c98aec111fc3b9809dea584858cab) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - removes dependency
+
 ## 2.2.0
 
 ### Minor Changes
