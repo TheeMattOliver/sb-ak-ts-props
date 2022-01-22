@@ -34,17 +34,7 @@ interface AtlasButtonProps extends ButtonProps {}
  * its types and provides additional functionality.
  */
 const AtlasButton = (props: AtlasButtonProps) => {
-  return (
-    <Button
-      {...props}
-      css={{
-        backgroundColor: "hotpink",
-        "&:hover": {
-          color: "lightgreen",
-        },
-      }}
-    />
-  );
+  return <Button {...props} />;
 };
 
 export default AtlasButton;

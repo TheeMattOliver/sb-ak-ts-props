@@ -1,10 +1,9 @@
 import React from "react";
 import { Meta } from "@storybook/react";
-
-import { AtlasButton } from "..";
-
 import BaseStyles from "../components/BaseStyles";
 import { ThemeProvider } from "../components/ThemeProvider";
+
+import { AtlasButton } from "..";
 
 import { ComponentProps } from "../utils/types";
 
