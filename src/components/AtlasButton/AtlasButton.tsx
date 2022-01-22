@@ -1,7 +1,9 @@
 import React from "react";
-
+import styled from "styled-components";
 import Button from "@atlaskit/button";
 import { ButtonProps } from "@atlaskit/button";
+
+import { get } from "../../constants";
 
 const SIZES = {
   small: {
@@ -36,5 +38,9 @@ interface AtlasButtonProps extends ButtonProps {}
 const AtlasButton = (props: AtlasButtonProps) => {
   return <Button {...props} />;
 };
+
+const Wrapper = styled.div`
+  background-color: ${get("colors.btn.primary.bg")};
+`;
 
 export default AtlasButton;
