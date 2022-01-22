@@ -1,6 +1,6 @@
 {
   "name": "storybook-ts-props-tester",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",

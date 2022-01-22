@@ -1,5 +1,11 @@
 # storybook-ts-props-tester
 
+## 2.2.2
+
+### Patch Changes
+
+- [`aedc3ae`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/aedc3aea2ece01451d3698360eff9bcd601f2d31) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - Adding demo vars pkg
+
 ## 2.2.1
 
 ### Patch Changes
