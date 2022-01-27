@@ -34,11 +34,61 @@ const ExtendedButton = ({ appearance, ...props }: ExtendedButtonProps) => {
 const PunkyButton = styled.button<ExtendedButtonProps>`
   background-color: ${(p) => (p.appearance === "punky" ? "deeppink" : "")};
   color: ${(p) => (p.appearance === "punky" ? "#FEEC2B" : "")};
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  border-width: 0px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: inherit;
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 500;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out 0s,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 2.28571em;
+  line-height: 2.28571em;
+  padding: 0px 10px;
+  vertical-align: middle;
+  width: auto;
+  -webkit-box-pack: center;
+  justify-content: center;
 `;
 
 const HalloweenButton = styled.button<ExtendedButtonProps>`
   background-color: ${(p) => (p.appearance === "halloween" ? "orange" : "")};
   color: ${(p) => (p.appearance === "halloween" ? "black" : "")};
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  border-width: 0px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: inherit;
+  font-style: normal;
+  font-family: "Creepster", cursive;
+  font-weight: 400;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out 0s,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 2.28571em;
+  line-height: 2.28571em;
+  padding: 0px 10px;
+  vertical-align: middle;
+  width: auto;
+  -webkit-box-pack: center;
+  justify-content: center;
 `;
 
 export default ExtendedButton;
