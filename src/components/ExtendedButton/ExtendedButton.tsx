@@ -70,7 +70,7 @@ const HalloweenButton = styled.button<ExtendedButtonProps>`
   border-radius: 3px;
   box-sizing: border-box;
   display: inline-flex;
-  font-size: inherit;
+  font-size: 250%;
   font-style: normal;
   font-family: "Creepster", cursive;
   font-weight: 400;
