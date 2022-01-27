@@ -1,5 +1,11 @@
 # storybook-ts-props-tester
 
+## 2.4.0
+
+### Minor Changes
+
+- [#11](https://github.com/TheeMattOliver/sb-ak-ts-props/pull/11) [`0dd2bf4`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/0dd2bf44a34d2702722da2e4c2b58c4fd1382a3d) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - New version incorporates font changes we're going big.
+
 ## 2.3.0
 
 ### Minor Changes
