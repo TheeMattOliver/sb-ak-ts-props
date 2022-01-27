@@ -1,5 +1,11 @@
 # storybook-ts-props-tester
 
+## 2.3.0
+
+### Minor Changes
+
+- [`05e3a56`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/05e3a56ffd1a5252b52038a93b1c8a40ad50d941) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - extended props api
+
 ## 2.2.2
 
 ### Patch Changes
