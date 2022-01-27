@@ -35,6 +35,8 @@ export default {
           "subtle",
           "subtle-link",
           "warning",
+          "punky",
+          "halloween",
         ],
       },
     },
@@ -43,4 +45,8 @@ export default {
 
 export const extendedButton = (args: ExtendedButtonProps) => {
   return <ExtendedButton {...args}>Hello world</ExtendedButton>;
+};
+
+extendedButton.args = {
+  appearance: "punky",
 };

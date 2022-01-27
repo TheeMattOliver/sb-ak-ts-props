@@ -2,8 +2,10 @@
 // This file needs to be a JavaScript file using CommonJS to be compatiable with preval
 // Cache bust: Jan 02 2022 08:08:16 GMT-0600 (This file is cached by the system's deployment tooling, so you'll need update this timestamp to rebuild this file)
 
-const { default: primitives } = require("ak-pr-demo-vars");
+const { default: primitives } = require("./temp/vars/dist/js");
 const { partitionColors, fontStack, omitScale } = require("./theme-utils");
+
+console.log("primitives: ", JSON.stringify(primitives));
 
 /**
  * @type Record<keyof typeof primitives.colors, Record<'colors' | 'shadows', Partial<typeof primitives.colors.light>>

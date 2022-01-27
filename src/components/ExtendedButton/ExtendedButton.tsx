@@ -1,18 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { StyledComponent } from "styled-components";
 import Button from "@atlaskit/button";
 import { ButtonProps, BaseOwnProps } from "@atlaskit/button";
 import { Appearance } from "@atlaskit/button";
 
 import { get } from "../../constants";
 
-interface ExtendedButtonProps extends ButtonProps {}
-
 type NewAppearance = "punky" | "halloween";
 
 type ExtendedAppearance = NewAppearance & Appearance;
 
-interface ExtendedButtonProps extends BaseOwnProps {
+interface ExtendedButtonProps
+  extends Omit<BaseOwnProps, "appearance" | "onClick"> {
   appearance: ExtendedAppearance;
 }
 
@@ -20,19 +19,16 @@ interface ExtendedButtonProps extends BaseOwnProps {
  * Goal: extend appearance Apperance type to accept different appearance values
  * and style accordingly
  */
-// const ExtendedButton = ({ appearance, ...props }: ExtendedButtonProps) => {
-//   let Component;
-//   if (appearance === "punky") {
-//     Component = PunkyButton;
-//   } else if (appearance === "halloween") {
-//     Component = HalloweenButton;
-//   } else {
-//     Component = Button;
-//   }
-//   return <Component appearance={appearance} {...props} />;
-// };
 const ExtendedButton = ({ appearance, ...props }: ExtendedButtonProps) => {
-  return <Button appearance={appearance} {...props} />;
+  let Component;
+  if (appearance === "punky") {
+    Component = PunkyButton;
+  } else if (appearance === "halloween") {
+    Component = HalloweenButton;
+  } else {
+    Component = Button;
+  }
+  return <Component appearance={appearance} {...props} />;
 };
 
 const PunkyButton = styled.button<ExtendedButtonProps>`
@@ -41,8 +37,8 @@ const PunkyButton = styled.button<ExtendedButtonProps>`
 `;
 
 const HalloweenButton = styled.button<ExtendedButtonProps>`
-  background-color: ${(p) => (p.appearance === "punky" ? "orange" : "")};
-  color: ${(p) => (p.appearance === "punky" ? "black" : "")};
+  background-color: ${(p) => (p.appearance === "halloween" ? "orange" : "")};
+  color: ${(p) => (p.appearance === "halloween" ? "black" : "")};
 `;
 
 export default ExtendedButton;
