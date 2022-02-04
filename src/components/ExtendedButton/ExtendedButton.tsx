@@ -62,7 +62,7 @@ const PunkyButton = styled.button<ExtendedButtonProps>`
 `;
 
 const HalloweenButton = styled.button<ExtendedButtonProps>`
-  background-color: ${(p) => (p.appearance === "halloween" ? "orange" : "")};
+  background-color: "orange";
   color: ${(p) => (p.appearance === "halloween" ? "black" : "")};
   -webkit-box-align: baseline;
   align-items: baseline;
@@ -70,7 +70,7 @@ const HalloweenButton = styled.button<ExtendedButtonProps>`
   border-radius: 3px;
   box-sizing: border-box;
   display: inline-flex;
-  font-size: 250%;
+  font-size: 110%;
   font-style: normal;
   font-family: "Creepster", cursive;
   font-weight: 400;
@@ -89,6 +89,13 @@ const HalloweenButton = styled.button<ExtendedButtonProps>`
   width: auto;
   -webkit-box-pack: center;
   justify-content: center;
+  background-color: #ff8b00;
+  color: #000000;
+  &:hover {
+    color: #00bb73;
+    background-color: #000000;
+    border-color: #ff8b00;
+  }
 `;
 
 export default ExtendedButton;
