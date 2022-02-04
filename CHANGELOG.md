@@ -1,5 +1,11 @@
 # storybook-ts-props-tester
 
+## 2.4.3
+
+### Patch Changes
+
+- [#19](https://github.com/TheeMattOliver/sb-ak-ts-props/pull/19) [`27f8481`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/27f84819257ce26daf929cd077efebe644a3d575) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - Implements new button variant
+
 ## 2.4.2
 
 ### Patch Changes
