@@ -63,7 +63,7 @@ const PunkyButton = styled.button<ExtendedButtonProps>`
 
 const HalloweenButton = styled.button<ExtendedButtonProps>`
   background-color: "orange";
-  color: ${(p) => (p.appearance === "halloween" ? "#212529" : "")};
+  color: ${(p) => (p.appearance === "halloween" ? "black" : "")};
   -webkit-box-align: baseline;
   align-items: baseline;
   border-width: 0px;
