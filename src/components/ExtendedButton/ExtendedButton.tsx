@@ -25,6 +25,8 @@ const ExtendedButton = ({ appearance, ...props }: ExtendedButtonProps) => {
     Component = PunkyButton;
   } else if (appearance === "halloween") {
     Component = HalloweenButton;
+  } else if (appearance === "christmas") {
+    Component = ChristmasButton;
   } else {
     Component = Button;
   }
@@ -95,6 +97,42 @@ const HalloweenButton = styled.button<ExtendedButtonProps>`
     color: #00bb73;
     background-color: #212529;
     border-color: #ff8b00;
+  }
+`;
+
+const ChristmasButton = styled.button<ExtendedButtonProps>`
+  background-color: ${(p) => (p.appearance === "christmas" ? "#0D5901 " : "")};
+  color: ${(p) => (p.appearance === "christmas" ? "#FFFFFF" : "")};
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  border-width: 0px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: inherit;
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 500;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out 0s,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 2.28571em;
+  line-height: 2.28571em;
+  padding: 0px 10px;
+  vertical-align: middle;
+  width: auto;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #dc3d2a;
+    border-color: #b3000c;
   }
 `;
 
