@@ -37,6 +37,7 @@ export default {
           "warning",
           "punky",
           "halloween",
+          "christmas",
         ],
       },
     },
