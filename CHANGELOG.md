@@ -1,5 +1,13 @@
 # storybook-ts-props-tester
 
+## 2.4.2
+
+### Patch Changes
+
+- [#18](https://github.com/TheeMattOliver/sb-ak-ts-props/pull/18) [`68d2a97`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/68d2a9723a51e9db972492b3822fdfb71d952f19) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - Implements new marketing look and feel in button.
+
+* [#16](https://github.com/TheeMattOliver/sb-ak-ts-props/pull/16) [`f8cd9ca`](https://github.com/TheeMattOliver/sb-ak-ts-props/commit/f8cd9ca85ebd1d16ddbc9d86dcbd8346979f7167) Thanks [@TheeMattOliver](https://github.com/TheeMattOliver)! - Implements the new button look and feel.
+
 ## 2.4.1
 
 ### Patch Changes
